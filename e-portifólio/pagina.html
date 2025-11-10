@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,43 +7,75 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title> Meu e-portifólio.</title>
 </head>
-<body class="font-sans">
-<header class=" bg-purple-700 ml-100 mr-50 rounded-xl ">
+<body class="font-sans text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+<header class=" bg-purple-700 ml-100 mr-50 rounded-xl">
 <section> 
     <div class="text-gray-100 ml-50 mr-100 mt-10 flex p-5"> 
-    <h1 class="text-3xl -mx-40">Olá, bem vindo ao meu e-portifólio!</h1>
-    <h3 class="my-20 -mx-40 text-xl">Meu nome é João Augusto de Sousa Casali, sou estudante da IFMS e cursante da Nova Informática, e faço trabalho de artes e programação, além de contrubuir para alguns projetos de escola com escrita. </h3>
+    <h1 class="text-3xl -mx-40">Olá, bem vindo ao meu e-portfólio!</h1>
+    <h3 class="my-20 -mx-40 text-xl ">Meu nome é João Augusto de Sousa Casali, sou <strong>estudante da IFMS</strong> e cursante da <strong>Nova Informática</strong>, e faço trabalho de artes e programação, além de contrubuir para alguns projetos do IF com escrita. </h3>
     <img src="imagens/Imagem do WhatsApp de 2025-11-07 à(s) 22.04.15_71723fe7.jpg" class="mx-50 rounded-full">
     </div>
 </section>
 <section>
-    <nav>
-        <ul class="text-white ml-10 flex flex-row gap-40">
-            <li><a href="#habilidades" class="hover:text-black">Minhas habilidades</a></li>
-            <li><a href="#formação" class="hover:text-black">formação</a></li>
-            <li><a href="#projetos" class="hover:text-black">projetos</a></li>
-            <li><a class="hover:text-black">contatos</a></li>
+    <nav class="bg-slate-950 rounded-bl-xl rounded-br-xl">
+        <ul class="text-white ml-10 flex flex-row gap-40 lg:text-lg xl:text-lg">
+            <li><a href="#habilidades" class="hover:text-blue-700">Minhas habilidades</a></li>
+            <li><a href="#formação" class="hover:text-blue-700">formação</a></li>
+            <li><a href="#projetos" class="hover:text-blue-700">projetos</a></li>
+            <li><a href="#contatos" class="hover:text-blue-700">contatos</a></li>
         </ul>
     </nav>
 </section>
 </header>
-<main class="bg-slate-500 text-gray-100 ml-10 mr-10 mt-30">
-<section>  
-    <h1 id="habilidades" class="text-center text-3xl mt-10">Minhas habilidades</h1>
-</section>
-<section>
-    <div class="mt-5 grid grid-cols-2 gap-5 ml-10 text-center">
-        <h1>ARTES</h1>
-        <h1>PROGRAMAÇÃO</h1>
+<main class="ml-10 mr-10">
+<section id="habilidades">  
+    <hr class="border-t border-gray-200 my-20">
+    <h1 class="text-center text-3xl font-bold">Minhas habilidades</h1>
+    <div class="mt-10 grid grid-cols-2 gap-5 ml-10 text-center font-bold text-2xl">
+        <h1>Artes</h1>
+        <h1>Programação & Linguagem de hipertexto</h1>
     </div>
-    <div class="mt-5 grid grid-cols-2 gap-5 ml-10 text-xl">
-        <p>A minha principal habilidade é desenhar, tendo mais de 2 anos experiência, tanto no papel quanto no digital, além de alguns projetos de animação em progresso.</p>
-        <p>Programo usando a linguagem javascript, na qual já fiz vários projetos relacionados a sites e cálculos.</p>
+    <div class="mt-5 grid grid-cols-2 gap-5 ml-10 text-xl ">
+        <h2 class="bg-slate-200 rounded-xl border-8">A minha principal habilidade é desenhar, tendo mais <strong>de 2 anos de experiência</strong>, tanto no papel quanto no digital, além de alguns projetos de animação em progresso.</h2>
+        <h2 class="bg-slate-200 rounded-xl border-8">Já fiz vários programas e sites usando <strong>javascript</strong>, <strong>HTML</strong>, <strong>CSS e tailwind</strong>, tendo 2 anos de experiência.</h2>
+    </div>
+</section>
+<section id="formação">
+    <hr class="border-t border-gray-200 my-20">
+    <h1 class="font-bold text-center text-3xl">Formação</h1>
+    <div class="grid grid-cols-3 mt-10 ml-60 mb-5 gap-30">
+        <img src="./imagens/1078952.png" class="w-20">
+        <img src="./imagens/1078952.png" class="w-20">
+        <h2 class="font-bold text-2xl mt-10">Em andamento</h2>
+    </div>
+    <div class="grid grid-cols-3 text-white gap-5 text-xl">
+        <p class="bg-purple-700 rounded-xl p-4">Sou formado no curso de operador de computador da <strong>FIC.</strong></p>
+        <p class="bg-purple-700 rounded-xl p-4">tenho certificado do curso de pixelart da <strong>Nova Informática</strong>.</p>
+        <p class="bg-purple-700 rounded-xl p-4">No momento, estou compeletando o primeiro ano do ensino médio do IF e cursando na Nova Informática com game dev.</p>
+    </div>
+</section>
+<section id="projetos">
+    <hr class="border-t border-gray-200 my-20">
+    <h1 class="text-center text-3xl font-bold">Meus projetos</h1>
+    <div class="grid grid-rows-2 absolute top-400 left-175">
+        <img src="./imagens/cenarioconceito.png" class="w-200 h-25 sm:justify-center">
+        <p class="text-lg font-light">Em Nova Informática, realizei artes conceituais como parte de um projeto de gamejam, com o jogo acima tendo o nome de "climber".</p>
+    </div>
+    <div class="grid grid-rows-2 absolute top-550">
+        <img src="./imagens/pixil-frame-0.png" class="w-175 h-25">
+        <p class="text-lg font-light">Outro projeto feito na Nova Informática, desta vez sendo um conceito para um jogo metroidvania.</p>
     </div>
 </section>
 </main>
-<footer>
-
+<footer class="bg-purple-700 absolute top-700 w-full h-32 rounded-tl-xl rounded-tr-xl">
+<section id="contatos">
+    <div class="grid grid-rows-2 items-center place-items-center p-4">
+        <a href="https://github.com/JuaumQxC">
+            <img src="./imagens/github.png" class="w-10">
+        </a>
+        <p class="text-lg">Meu github</p>
+    </div>
+</section>
 </footer>
 </body>
 </html>
